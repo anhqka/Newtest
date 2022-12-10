@@ -1,0 +1,67 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/charts": "^1.4.2",
+    "@ant-design/icons": "^4.7.0",
+    "@hookform/error-message": "^2.0.0",
+    "@react-google-maps/api": "^2.17.0",
+    "@reduxjs/toolkit": "^1.8.6",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "antd": "^4.23.6",
+    "axios": "^1.1.3",
+    "http-proxy-middleware": "^2.0.6",
+    "isobject": "^4.0.0",
+    "ra-data-simple-rest": "^4.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-highlight-words": "^0.18.0",
+    "react-hook-form": "^7.38.0",
+    "react-icons": "^4.6.0",
+    "react-new-window": "^1.0.1",
+    "react-redux": "^8.0.4",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "redux-persist": "^6.0.0",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "transform": {
+    "^.+\\.(ts|tsx|js|jsx)?$": "ts-jest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  }
+}

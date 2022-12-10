@@ -1,0 +1,47 @@
+import { Pie } from "@ant-design/charts";
+import { useEffect, useState } from "react";
+
+const MonthOrderTotal = ({orderTotal}) => {
+    const [data, setData] = useState([])
+    useEffect(() => {
+        setData(orderTotal)
+    }, [orderTotal])
+
+    const config = {
+        appendPadding: 10,
+        data,
+        angleField: 'sumBooking',
+        colorField: 'status',
+        radius: 0.8,
+        legend: false,
+        label: {
+            type: 'inner',
+            offset: '-50%',
+            style: {
+                fill: '#fff',
+                fontSize: 18,
+                textAlign: 'center',
+            },
+        },
+        pieStyle: ({ status }) => {
+            if (status === 'success') {
+                return {
+                    fill: 'p(a)https://gw.alipayobjects.com/zos/antfincdn/FioHMFgIld/pie-wenli1.png',
+                };
+            }
+
+            return {
+                fill: 'p(a)https://gw.alipayobjects.com/zos/antfincdn/Ye2DqRx%2627/pie-wenli2.png',
+            };
+        },
+        tooltip: false,
+        interactions: [
+            {
+                type: 'element-single-selected',
+            },
+        ],
+    };
+    return <Pie {...config} />;
+}
+
+export default MonthOrderTotal
